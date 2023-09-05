@@ -1,0 +1,24 @@
+{
+  "name": "browserifytest",
+  "version": "1.0.0",
+  "description": "probando browserify y lastfm",
+  "main": "src/index.js",
+  "dependencies": {
+    "lastfm": "^0.9.4",
+    "underscore": "^1.13.6",
+    "youtube-search": "^1.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "scripts": {
+    "dev": "nodemon",
+    "start": "nodemon src/index.js localhost 8080"
+  },
+  "keywords": [
+    "last.fm",
+    "browserify"
+  ],
+  "author": "salazarbarrera",
+  "license": "AGPL-3.0-or-later"
+}
