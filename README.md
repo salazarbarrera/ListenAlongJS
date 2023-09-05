@@ -2,33 +2,33 @@
 A web app for listening what another Last.fm user is playing with Youtube
 
 # Background
-Inspired by the python program [LastFmListenAlong](https://github.com/Hexalyse/LastFmListenAlong) and the js web app [Draft.fm](https://tmthornhill.github.io/draft.html) (both found [here](https://www.reddit.com/r/lastfm/comments/b06wql/how_to_listen_along_a_lastfm_user_on_spotify/)), and [jakeledoux](https://github.com/jakeledoux)'s [live](https://github.com/jakeledoux/live), I came up with this really basic and portable webapp that allows you to listen what a [last.fm](https://last.fm) user is currently playing. Sort of.
+Inspired by the python program [LastFmListenAlong](https://github.com/Hexalyse/LastFmListenAlong) and the js web app [Draft.fm](https://tmthornhill.github.io/draft.html) (both found [here](https://www.reddit.com/r/lastfm/comments/b06wql/how_to_listen_along_a_lastfm_user_on_spotify/)), and [jakeledoux](https://github.com/jakeledoux)'s [live](https://github.com/jakeledoux/live), I came up with this really basic and portable webapp that allows you to listen what any [last.fm](https://last.fm) user is currently playing. Sort of.
 
 # How it works
-What the app really does is to invoke a Youtube player and peek the "Now Playing" attribute of an account. If it finds a song, then
+What the app really does is to invoke a Youtube player and peek the "Now Playing" attribute of the account. If it finds a song there, then it:
 
-1. It calls Youtube and asks for the top 30 results of "%Artists% - %Track%"
-2. It tries to play the top one. 
-3. If the first one fails (because of Vevo, because of location, etc, etc), it tries to play the next one and so on.
-4. If the video that finally works is not good or if it is totally unrelated, you can press "Keep Seeking" and try with the next ones.
+1. Calls Youtube and asks for the top 30 search results of "%Artists% - %Track%"
+2. Tries to play the top one.
+3. If the first one fails (because of Vevo, because of location, etc, etc), it tries to play the next one (and so on).
+4. If the video that finally works has bad quality or if it is totally unrelated to the song, you can press "Keep Seeking" and try with the next ones.
 
-The song will change automatically when the user listens anything new, and it will scrobble the song when other user stops playing.
+The song will change automatically once the user listens to other songs, and the program will scrobble the songs as it takes you to the next one.
 
 # Pros and Cons
  **Cons**:
 
 * It is very buggy
-* It requires to be a little tech-savy in order to generate API key for [Youtube](https://developers.google.com/youtube/v3/getting-started) (instructions in the links).
-* It will scrobble what the other user listened to, not what you actually listened to.
-* You can only listen to about 100 songs per day because of a limitation of how many times you can use the Youtube search API.
-* You can't get the "playlink" Youtube video from the Last.fm website, if the search API finds it for you, it was pure good luck.
-* You need to edit the js file to set the target user and the API keys.
+* You will have to be a little tech-savy, since you will need to edit a javascript file and generate an API key for [Youtube](https://developers.google.com/youtube/v3/getting-started) (instructions in the link).
+* It will scrobble what the other user listens to, not what you actually listened to.
+* You can only listen to about 100 songs per day because of the quota limitation of the Youtube search API.
+* You can't get the "playlink" of a track (the Youtube video from the Last.fm page of a track). If by any chance it plays, it was the search API the one that found it for you out of pure luck.
+* You need to edit the js file to hardcode the target user and the API key.
 
 **Pros**:
 
-* You don't need premium *anything*, you only need a free Youtube account to generate the APIs and a Last.fm account to use it.
-* It's totally portable. You don't need to mount servers or anything fancy, just open the index.html with your favourite browser and enjoy the music.
-* It is a great companion for [Jakeledoux's Live](https://jakeledoux.com/live/fuestra), just go to https://jakeledoux.com/live/{YOUR\_USER} and see what friend will be your personal DJ today.
+* You don't need premium *anything*, you only need a free Youtube account to generate the API and a Last.fm account to scrobble.
+* It's totally portable. You don't need to mount servers or anything fancy, just open the index.html with your favourite browser and enjoy the music (it is optimized for Firefox, it's more buggy on Chrome).
+* It is a great companion for [Jakeledoux's Live](https://jakeledoux.com/live/fuestra), just go to [https://jakeledoux.com/live/{YOUR\_USER}](https://jakeledoux.com/live/{YOUR_USER}) and see what friend will be your personal DJ today.
 
 # Instructions of use:
 
@@ -36,7 +36,7 @@ The song will change automatically when the user listens anything new, and it wi
 2. Replace `'TARGET_USER'` with the username of the account you want to listen.
 3. Open `index.html` with your browser. Allow it to open pop-ups (also allow autoplay if on Firefox). Refresh.
 4. A pop up to [Last.fm](https://Last.fm) will open asking for authorization. Authorize it.
-5. If you use Chrome, press play in the first video.
+5. If you use Chrome, press play in the first video to "consent" to the autoplay.
 
 # Build instructions
 The bundles are made with [Browserify](https://browserify.org/).
