@@ -1,5 +1,5 @@
 {
-  "name": "browserifytest",
+  "name": "listenAlongJS",
   "version": "1.0.0",
   "description": "probando browserify y lastfm",
   "main": "src/index.js",
