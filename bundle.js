@@ -4857,6 +4857,7 @@ $(document).ready(function() {
       window.open(targetUserUrl, '_blank');
     });
 });
+
 },{"lastfm":30,"youtube-search":38}],40:[function(require,module,exports){
 'use strict';
 
