@@ -1,6 +1,9 @@
 # ListenAlongJS
 A web app for listening what another Last.fm user is playing with Youtube
 
+![imagen](https://github.com/salazarbarrera/ListenAlongJS/assets/68821455/43bffc57-8fdf-48f0-ac92-2d1098695917)
+
+
 # Background
 Inspired by the python program [LastFmListenAlong](https://github.com/Hexalyse/LastFmListenAlong) and the js web app [Draft.fm](https://tmthornhill.github.io/draft.html) (both found [here](https://www.reddit.com/r/lastfm/comments/b06wql/how_to_listen_along_a_lastfm_user_on_spotify/)), and [jakeledoux](https://github.com/jakeledoux)'s [live](https://github.com/jakeledoux/live), I came up with this really basic and portable webapp that allows you to listen what any [last.fm](https://last.fm) user is currently playing. Sort of.
 
