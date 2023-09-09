@@ -1,5 +1,5 @@
 # ListenAlongJS
-[https://salazarbarrera.neocities.org/ListenAlongJS/](ListenAlongJS) is a web app for listening what another Last.fm user is playing with Youtube.
+[ListenAlongJS](https://salazarbarrera.neocities.org/ListenAlongJS/) is a web app for listening what another Last.fm user is playing with Youtube.
 
 ![imagen](https://github.com/salazarbarrera/ListenAlongJS/assets/68821455/43bffc57-8fdf-48f0-ac92-2d1098695917)
 
@@ -33,7 +33,7 @@ The song will change automatically once the user listens to other songs, and the
 * It's totally portable. You don't need to mount servers or anything fancy, just open the index.html with your favourite browser and enjoy the music (it is optimized for Firefox, it's more buggy on Chrome).
 * To increase privacy and make it easier to use, now it is possible to set the target user and Google API via text input (compatible with autocomplete).
 * Dark mode!
-* Since it's that portable, and all the process is made client-side or via third party APIs, you can upload instances to free basic hosting services like [https://neocities.org/](Neocities) without concerns of someone stealing your Google API key. [https://salazarbarrera.neocities.org/ListenAlongJS/](Visit my demo!)
+* Since it's that portable, and all the process is made client-side or via third party APIs, you can upload instances to free basic hosting services like [https://neocities.org/](Neocities) without concerns of someone stealing your Google API key. [Visit my demo!](https://salazarbarrera.neocities.org/ListenAlongJS/)
 * It is a great companion for [Jakeledoux's Live](https://jakeledoux.com/live/fuestra), just go to [https://jakeledoux.com/live/{YOUR\_USER}](https://jakeledoux.com/live/{YOUR_USER}) and see what friend will be your personal DJ today.
 
 # Instructions of use:
