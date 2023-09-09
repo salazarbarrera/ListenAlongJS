@@ -38,11 +38,12 @@ The song will change automatically once the user listens to other songs, and the
 
 # Instructions of use:
 
-1. Generate the [Youtube API key](https://developers.google.com/youtube/v3/getting-started). Paste it in `bundle.js` where it says `'GOOGLE_API_KEY'` or in the text input.
-2. Replace `'TARGET_USER'` with the username of the account you want to listen, or paste it in the text input.
-3. Open `index.html` with your browser. Allow it to open pop-ups (also allow autoplay if on Firefox).
-4. A pop up to [Last.fm](https://Last.fm) will open asking for authorization. Give access.
-5. If you use Chrome, press play in the first video to "consent" to the autoplay.
+1. Download the last [realese](https://github.com/salazarbarrera/ListenAlongJS/releases/) and unzip it.
+2. Generate the [Youtube API key](https://developers.google.com/youtube/v3/getting-started). Paste it in `bundle.js` where it says `'GOOGLE_API_KEY'` or in the text input.
+3. Replace `'TARGET_USER'` with the username of the account you want to listen, or paste it in the text input.
+4. Open `index.html` with your browser. Allow it to open pop-ups (also allow autoplay if on Firefox).
+5. A pop up to [Last.fm](https://Last.fm) will open asking for authorization. Give access.
+6. If you use Chrome, press play in the first video to "consent" to the autoplay.
 
 # Build instructions
 The bundles are made with [Browserify](https://browserify.org/).
