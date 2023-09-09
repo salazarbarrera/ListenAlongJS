@@ -6,15 +6,52 @@
     <title>ListenAlongJS</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://www.youtube.com/iframe_api" async></script>
+    <style type="text/css">
+    	h1{
+    		display: inline-block;
+    	}
+
+    	.trigger{
+    		color: blue;
+    		text-decoration: underline;
+    		width: fit-content;
+    	}
+
+    	.button{
+			background-color: #cd0000;
+			color: #d7d7d7;
+		    width: fit-content;
+		    border: solid;
+		    border-color: #990505;
+		    padding: 15px;
+		    border-radius: 100%;
+    	}
+    </style>
   </head>
   <body>
-    <h1>ListenAlongJS</h1>
-    <p>
-    <div id="skipper" style="color: blue; text-decoration: underline">Keep seeking»»</div>
-    </p>
-    <p id="song"></p>
-    <p id="targetuser" style="color: blue; text-decoration: underline"></p>
-    <div id="yt-iframe"></div>
+    <h1>ListenAlongJS</h1><small> 1.1.0 <a href="https://github.com/salazarbarrera/ListenAlongJS" target="_blank">[Git]</a></small>
+    <div id="lobby" style="display: block;">
+    	<form onsubmit='return false;' id="fakeForm">
+		  <p>Youtube API Key: <input type="text" id="googleKeyUI" placeholder="AIz$3y5D-Bb2..." autocomplete="on" value=""> <small><a href="https://youtu.be/yuM7KH-JLu8" target="_blank">(How)</a></small></p>
+    	  <p>Target User: <input type="text" id="targertUserGUI" placeholder="e.g. insipidhues" autocomplete="on" value=""></p>
+		  <button style="display: none;" type="submit"></button>
+		</form>
+		<br>
+    	<p><b>Please allow popups for this website and authorize it to scrobble in your name!</b></p>
+    	<small><p><b>Tips:</b> allow audio autoplay if you can. If input boxes are left empty, the hardcoded variables 'GOOGLE_KEY' and 'USER' are used instead.</p></small>
+    	<div id="auth" class="button">Authorize</div>
+    </div>
+    <div id="launch" style="display: none;" class="trigger">
+    	Launch after allowing access in the pop-up.
+    </div>
+    <div id="player" style="display: none;">
+    	<p>
+	    	<div id="skipper" class="trigger">Keep seeking»»</div>
+	    </p>
+	    <p id="song"></p>
+	    <p id="targetuser" class="trigger"></p>
+	    <div id="yt-iframe"></div>
+	</div>
     <script src="bundle.js"></script>
   </body>
 </html>
