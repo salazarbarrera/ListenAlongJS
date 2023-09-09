@@ -1,5 +1,5 @@
 # ListenAlongJS
-A web app for listening what another Last.fm user is playing with Youtube
+[https://salazarbarrera.neocities.org/ListenAlongJS/](ListenAlongJS) is a web app for listening what another Last.fm user is playing with Youtube.
 
 ![imagen](https://github.com/salazarbarrera/ListenAlongJS/assets/68821455/43bffc57-8fdf-48f0-ac92-2d1098695917)
 
