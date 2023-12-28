@@ -56,7 +56,7 @@ function loadVideo(results, index) {
     player.destroy();
   }
   window.YT.ready(function() {
-    player = new window.YT.Player("yt-iframe", {
+    var player = new window.YT.Player("yt-iframe", {
       height: "390",
       width: "640",
       videoId: results[index].id,
@@ -108,7 +108,7 @@ function auth(){
     $.getJSON( token_url, function( data ) {
     mytoken = data.token;
 
-    authUrl = "https://www.last.fm/api/auth?api_key=" + lastfmApi + "&token=" + mytoken;
+    let authUrl = "https://www.last.fm/api/auth?api_key=" + lastfmApi + "&token=" + mytoken;
     var win = window.open(authUrl, '_blank', 'toolbar=yes,scrollbars=yes,width=500,height=400');
     $("#lobby").hideV();
     $("#launch").showV();
@@ -117,7 +117,7 @@ function auth(){
 }
 
 function launch(){
-  opts = {
+  var opts = {
     maxResults: MAX_RESULTS,
     key: GOOGLE_KEY
   };
@@ -215,7 +215,7 @@ $(document).ready(function() {
 
 
 function setTargetUser(){
-  targetUserUrl = "https://www.last.fm/user/" + USER;
+  let targetUserUrl = "https://www.last.fm/user/" + USER;
   document.getElementById("targetuser").innerHTML = targetUserUrl;
   $(document).ready(function() {
       $("#targetuser").click(function() {

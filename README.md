@@ -1,7 +1,7 @@
 # ListenAlongJS
 [ListenAlongJS](https://salazarbarrera.neocities.org/ListenAlongJS/) is a web app for listening what another Last.fm user is playing with Youtube.
 
-![imagen](https://github.com/salazarbarrera/ListenAlongJS/assets/68821455/43bffc57-8fdf-48f0-ac92-2d1098695917)
+![image](https://github.com/salazarbarrera/ListenAlongJS/assets/68821455/43bffc57-8fdf-48f0-ac92-2d1098695917)
 
 
 # Background
@@ -58,7 +58,7 @@ Then, clone this repo and in its root folder run
 
 ```
 npm install
-browserify src/index.js -o bundle.js
+browserify src/index.js -o bundle.js -t [ babelify --presets [ @babel/preset-env ] --global true ] -t [ browserify-replace --replace '{ "from": "axios.get\\(", "to": "axios.default.get(" }' --global true ]
 ```
 # Credits
 This program couldn't be possible without these libraries:

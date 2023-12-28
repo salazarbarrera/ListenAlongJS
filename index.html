@@ -15,6 +15,7 @@
     		color: blue;
     		text-decoration: underline;
     		width: fit-content;
+    		cursor: pointer;
     	}
 
     	.button{
@@ -25,6 +26,7 @@
 		    border-color: #990505;
 		    padding: 15px;
 		    border-radius: 100%;
+		    cursor: pointer;
     	}
 
     	@media (prefers-color-scheme: dark) {
@@ -45,10 +47,10 @@
     </style>
   </head>
   <body>
-    <h1>ListenAlongJS</h1><small> 1.1.0 <a href="https://github.com/salazarbarrera/ListenAlongJS" target="_blank">[Git]</a></small>
+    <h1>ListenAlongJS</h1><small> 1.1.1 <a href="https://github.com/salazarbarrera/ListenAlongJS" target="_blank">[Git]</a></small>
     <div id="lobby" style="display: block;">
     	<form onsubmit='return false;' id="fakeForm">
-		  <p>Youtube API Key: <input type="text" id="googleKeyUI" placeholder="AIz$3y5D-Bb2..." autocomplete="on" value=""> <small><a href="https://youtu.be/yuM7KH-JLu8" target="_blank">(How)</a></small></p>
+		  <p>Youtube API Key: <input type="text" id="googleKeyUI" placeholder="AIz$3y5D-Bb2..." autocomplete="on" value=""> <small><a href="https://developers.google.com/youtube/v3/getting-started" target="_blank">(How)</a><a href="https://youtu.be/yuM7KH-JLu8" target="_blank">(Video)</a></small></p>
     	  <p>Target User: <input type="text" id="targertUserGUI" placeholder="e.g. insipidhues" autocomplete="on" value=""></p>
 		  <button style="display: none;" type="submit"></button>
 		</form>
