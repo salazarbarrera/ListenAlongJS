@@ -6101,19 +6101,6 @@ var lastfmSecret = 'd93696111a9e0618b674a327f666be5e';
 var lastfmApi = 'c6428f3b317e769153c76688dee205ad';
 ////////////////////////////////////////////////////////////
 
-/*
-Borrar
-
-
-
-const lyricsFinder = require("@jeve/lyrics-finder");
-
-lyricsFinder.LyricsFinder("sacrifice - the weeknd").then((data) => {
-  console.log(data);
-});
-
-*/
-
 var player;
 var oldDate;
 var oldTrack;
@@ -6121,7 +6108,9 @@ var videoResults;
 var videoIndex;
 var lastfm;
 function resumeLoadVideo() {
-  if (videoIndex < MAX_RESULTS) loadVideo(videoResults, videoIndex + 1);
+  if (videoIndex < MAX_RESULTS) {
+    loadVideo(videoResults, videoIndex + 1);
+  }
 }
 function loadVideo(results, index) {
   videoResults = results;
@@ -6130,7 +6119,7 @@ function loadVideo(results, index) {
     player.destroy();
   }
   window.YT.ready(function () {
-    var player = new window.YT.Player("yt-iframe", {
+    player = new window.YT.Player("yt-iframe", {
       height: "390",
       width: "640",
       videoId: results[index].id,

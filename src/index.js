@@ -45,8 +45,9 @@ var videoIndex;
 var lastfm
 
 function resumeLoadVideo(){
-  if (videoIndex < MAX_RESULTS)
+  if (videoIndex < MAX_RESULTS){
     loadVideo(videoResults, videoIndex+1)
+  }
 }
 
 function loadVideo(results, index) {
@@ -56,7 +57,7 @@ function loadVideo(results, index) {
     player.destroy();
   }
   window.YT.ready(function() {
-    var player = new window.YT.Player("yt-iframe", {
+    player = new window.YT.Player("yt-iframe", {
       height: "390",
       width: "640",
       videoId: results[index].id,
