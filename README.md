@@ -1,7 +1,7 @@
 # ListenAlongJS
 [ListenAlongJS](https://salazarbarrera.neocities.org/ListenAlongJS/) is a web app for listening what another Last.fm user is playing with Youtube.
 
-![image](https://github.com/salazarbarrera/ListenAlongJS/assets/68821455/43bffc57-8fdf-48f0-ac92-2d1098695917)
+![image](https://github.com/osvaldobarrera/ListenAlongJS/assets/68821455/43bffc57-8fdf-48f0-ac92-2d1098695917)
 
 
 # Background
@@ -38,7 +38,7 @@ The song will change automatically once the user listens to other songs, and the
 
 # Instructions of use:
 
-1. Download the last [realese](https://github.com/salazarbarrera/ListenAlongJS/releases/) and unzip it.
+1. Download the last [realese](https://github.com/osvaldobarrera/ListenAlongJS/releases/) and unzip it.
 2. Generate the [Youtube API key](https://developers.google.com/youtube/v3/getting-started). Paste it in `bundle.js` where it says `'GOOGLE_API_KEY'` or in the text input.
 3. Replace `'TARGET_USER'` with the username of the account you want to listen, or paste it in the text input.
 4. Open `index.html` with your browser. Allow it to open pop-ups (also allow autoplay if on Firefox).
